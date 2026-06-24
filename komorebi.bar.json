@@ -1,54 +1,36 @@
 {
-  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.40/schema.bar.json",
-  "font_family": "JetBrains Mono",
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.41/schema.bar.json",
+  "font_family": "Terminess Nerd Font",
+  "font_size": 13.0,
   "theme": {
     "palette": "Base16",
-    "name": "Ashes",
-    "accent": "Base0D"
+    "name": "GruvboxDarkMedium",
+    "accent": "Base0A"
   },
+  "height": 30,
+  "transparency_alpha": 230,
   "left_widgets": [
     {
       "Komorebi": {
         "workspaces": {
           "enable": true,
-          "hide_empty_workspaces": false
+          "hide_empty_workspaces": true
         },
         "layout": {
-          "enable": true
+          "enable": false
         },
         "focused_window": {
           "enable": true,
-          "show_icon": true
+          "show_icon": false
         }
       }
     }
   ],
   "right_widgets": [
     {
-      "Update": {
-        "enable": true
-      }
-    },
-    {
-      "Media": {
-        "enable": false
-      }
-    },
-    {
-      "Storage": {
-        "enable": false
-      }
-    },
-    {
       "Memory": {
-        "enable": false
-      }
-    },
-    {
-      "Network": {
-        "enable": false,
-        "show_activity": true,
-        "show_total_activity": true
+        "enable": true,
+		"label_prefix": "Icon"
       }
     },
     {
@@ -60,12 +42,13 @@
     {
       "Time": {
         "enable": true,
-        "format": "TwentyFourHour"
+        "format": { "Custom": "%H:%M" }
       }
     },
     {
       "Battery": {
-        "enable": true
+        "enable": true,
+		"hide_on_full_charge": true
       }
     }
   ]
